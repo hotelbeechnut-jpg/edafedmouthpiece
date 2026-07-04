@@ -33,6 +33,20 @@ export default function Contact() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
+  const buildWhatsAppUrl = () => {
+    const text = [
+      `*New Contact Message*`,
+      ``,
+      `*Name:* ${formData.name}`,
+      `*Email:* ${formData.email}`,
+      `*Subject:* ${formData.subject || "Not specified"}`,
+      ``,
+      `*Message:*`,
+      formData.message,
+    ].join("\n");
+    return `https://wa.me/2349115170226?text=${encodeURIComponent(text)}`;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
@@ -48,7 +62,7 @@ export default function Contact() {
         <main className="section" style={{ paddingTop: 'calc(var(--nav-height) + 4rem)' }}>
           <div className="container">
             <div className={styles.formWrap}>
-              <FormSuccess />
+              <FormSuccess whatsappUrl={buildWhatsAppUrl()} buttonLabel="Send via WhatsApp" />
             </div>
           </div>
         </main>

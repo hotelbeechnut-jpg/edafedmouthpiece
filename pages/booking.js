@@ -38,6 +38,24 @@ export default function Booking() {
     if (errors[name]) setErrors((prev) => ({ ...prev, [name]: '' }));
   };
 
+  const buildWhatsAppUrl = () => {
+    const text = [
+      `*New Booking Inquiry*`,
+      ``,
+      `*Name:* ${formData.name}`,
+      `*Email:* ${formData.email}`,
+      `*Phone:* ${formData.phone || "Not provided"}`,
+      `*Event Type:* ${formData.eventType}`,
+      `*Date:* ${formData.date || "Not specified"}`,
+      `*Location:* ${formData.location}`,
+      `*Budget:* ${formData.budget || "Not specified"}`,
+      ``,
+      `*Message:*`,
+      formData.message,
+    ].join("\n");
+    return `https://wa.me/2349115170226?text=${encodeURIComponent(text)}`;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
@@ -53,7 +71,7 @@ export default function Booking() {
         <main className="section" style={{ paddingTop: 'calc(var(--nav-height) + 4rem)' }}>
           <div className="container">
             <div className={styles.formWrap}>
-              <FormSuccess />
+              <FormSuccess whatsappUrl={buildWhatsAppUrl()} buttonLabel="Send Inquiry via WhatsApp" />
             </div>
           </div>
         </main>
