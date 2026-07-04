@@ -239,14 +239,14 @@ export default function Booking() {
                     <span className={styles.shortcutIcon}>📞</span>
                     <div>
                       <strong>Phone</strong>
-                      <p>[INSERT PHONE NUMBER]</p>
+                      <p>+234 911 517 0226</p>
                     </div>
                   </div>
                   <div className={styles.shortcut}>
                     <span className={styles.shortcutIcon}>💬</span>
                     <div>
                       <strong>WhatsApp</strong>
-                      <p>[INSERT WHATSAPP NUMBER]</p>
+                      <p>+234 911 517 0226</p>
                     </div>
                   </div>
                   <div className={styles.shortcut}>

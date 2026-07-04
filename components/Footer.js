@@ -39,11 +39,11 @@ export default function Footer() {
             <a href="https://tiktok.com/@comedian_mouthpiece" target="_blank" rel="noopener noreferrer">
               TikTok
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Instagram [INSERT LINK]
+            <a href="https://www.instagram.com/comedian_dmouthpiece" target="_blank" rel="noopener noreferrer">
+              Instagram
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              Facebook [INSERT LINK]
+            <a href="https://www.facebook.com/ikuta.oddo" target="_blank" rel="noopener noreferrer">
+              Facebook
             </a>
           </div>
         </div>

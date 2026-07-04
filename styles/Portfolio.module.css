@@ -10,20 +10,21 @@
 
 .cardImageWrap {
   position: relative;
-  aspect-ratio: 16/10;
+  aspect-ratio: 4/3;
   border-radius: var(--border-radius);
   overflow: hidden;
   background: var(--color-bg-alt);
 }
 
 .portfolioCard.featured .cardImageWrap {
-  aspect-ratio: 16/9;
+  aspect-ratio: 3/2;
 }
 
 .cardImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
   transition: transform 0.6s ease;
 }
 
@@ -74,7 +75,7 @@
   }
 
   .portfolioCard.featured .cardImageWrap {
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/4;
   }
 
   .flyerGrid {

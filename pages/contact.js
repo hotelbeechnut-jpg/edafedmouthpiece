@@ -161,7 +161,7 @@ export default function Contact() {
                   </div>
                   <div className={styles.infoItem}>
                     <strong>Phone</strong>
-                    <p>[INSERT PHONE NUMBER]</p>
+                    <p>+234 911 517 0226</p>
                   </div>
                   <div className={styles.infoItem}>
                     <strong>Email</strong>
@@ -169,7 +169,7 @@ export default function Contact() {
                   </div>
                   <div className={styles.infoItem}>
                     <strong>WhatsApp</strong>
-                    <p>[INSERT WHATSAPP NUMBER]</p>
+                    <p>+234 911 517 0226</p>
                   </div>
                 </div>
 
@@ -181,15 +181,15 @@ export default function Contact() {
                       <span>TikTok</span>
                       <span className={styles.socialHandle}>@comedian_mouthpiece</span>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
+                    <a href="https://www.instagram.com/comedian_dmouthpiece" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
                       <span className={styles.socialIcon}>📸</span>
                       <span>Instagram</span>
-                      <span className={styles.socialHandle}>[INSERT HANDLE]</span>
+                      <span className={styles.socialHandle}>@comedian_dmouthpiece</span>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
+                    <a href="https://www.facebook.com/ikuta.oddo" target="_blank" rel="noopener noreferrer" className={styles.socialCard}>
                       <span className={styles.socialIcon}>👍</span>
                       <span>Facebook</span>
-                      <span className={styles.socialHandle}>[INSERT HANDLE]</span>
+                      <span className={styles.socialHandle}>ikuta.oddo</span>
                     </a>
                   </div>
                 </div>
